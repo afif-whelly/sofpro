@@ -53,7 +53,6 @@
             "@php artisan key:generate --ansi"
         ],
         "vercel": [
-            "npm install && npm run prod",
             "php artisan config:clear"
           ]
     },
