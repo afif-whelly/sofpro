@@ -12,7 +12,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        if ($this->app->environment('local') && config('clockwork.enable')) {
+            $this->app->register(\Clockwork\Support\Laravel\ClockworkServiceProvider::class);
+        }
+
+        if (!config('clockwork.enable', false)) return;
     }
 
     /**
@@ -24,5 +28,7 @@ class AppServiceProvider extends ServiceProvider
             $float = floatval($harga);
             return 'Rp' . number_format($float, 0, ',', '.');
         });
+
+        if (!config('clockwork.enable', false)) return;
     }
 }

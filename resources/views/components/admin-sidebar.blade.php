@@ -14,18 +14,21 @@
             'p-4 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-300 rounded-lg',
             'bg-green-200 hover:bg-green-300 dark:bg-green-600 dark:text-white dark:hover:bg-green-700 dark:hover:text-white' => request()->routeIs(
                 'admin.sewa-alat.*'),
-        ])><i class="fa-solid fa-boxes-packing"></i> Sewa Alat</a>
+        ])><i
+                class="fa-solid fa-boxes-packing"></i> Sewa Alat</a>
         <a href="{{ route('admin.permohonan-magang.index') }}" @class([
             'p-4 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-300 rounded-lg',
             'bg-green-200 hover:bg-green-300 dark:bg-green-600 dark:text-white dark:hover:bg-green-700 dark:hover:text-white' => request()->routeIs(
                 'admin.permohonan-magang.index'),
-        ])><i class="fa-regular fa-address-card"></i> Permohonan
+        ])><i
+                class="fa-regular fa-address-card"></i> Permohonan
             Magang</a>
         <a href="{{ route('admin.klaim-asuransi.index') }}" @class([
             'p-4 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-300 rounded-lg',
             'bg-green-200 hover:bg-green-300 dark:bg-green-600 dark:text-white dark:hover:bg-green-700 dark:hover:text-white' => request()->routeIs(
                 'admin.klaim-asuransi.index'),
-        ])><i class="fa-solid fa-certificate"></i> Klaim Asuransi</a>
+        ])><i
+                class="fa-solid fa-certificate"></i> Klaim Asuransi</a>
         {{-- <a href="{{ route('admin.peta-sebaran.index') }}" @class([
             'p-4 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-300 rounded-lg',
             'bg-green-200 hover:bg-green-300 dark:bg-green-600 dark:text-white dark:hover:bg-green-700 dark:hover:text-white' => request()->routeIs(

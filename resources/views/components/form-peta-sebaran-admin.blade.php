@@ -42,7 +42,7 @@
        
             <div>
                 <x-input-label for="minta_data">Data yang Diminta</x-input-label>
-                <x-textarea id="minta_data" class="block w-full mt-1" type="text" name="minta_data" :value="$is_edit ? old('minta_data', $permohonan->lokasi) : old('minta_data')"
+                <x-text-input id="minta_data" class="block w-full mt-1" type="text" name="minta_data" :value="$is_edit ? old('minta_data', $permohonan->lokasi) : old('minta_data')"
                     required />
                 <x-input-error :messages="$errors->get('minta_data')" class="mt-2" />
             </div>
